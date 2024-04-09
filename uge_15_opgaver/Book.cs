@@ -6,12 +6,14 @@ namespace uge_15_opgaver
         public string ItemId { get; set; }
         public string Title {  get; set; }
         public double Price { get; set; }
+        
 
         public Book()
         {
             ItemId = string.Empty;
             Title = string.Empty;
             Price = 0;
+            
         }
         public Book(string itemId)
         {

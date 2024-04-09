@@ -6,13 +6,14 @@ namespace uge_15_opgaver
         public string ItemId { get; set; }
         public string Design { get; set; }
         public Level Quality { get; set; }
+       
 
-        //public Amulet()
-        //{
-        //    ItemId = string.Empty;
-        //    Design = string.Empty;
-        //    Quality = Level.medium;
-        //}
+        public Amulet()
+        {
+            ItemId = string.Empty;
+            Design = string.Empty;
+            
+        }
 
         public Amulet(string itemId)
         {
