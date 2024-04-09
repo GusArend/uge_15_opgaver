@@ -14,13 +14,13 @@ namespace uge_15_opgaver
             switch (amulet.Quality)
             {
                 case Level.high:
-                    price= 27.5;
+                    price = 27.5;
                     break;
                 case Level.medium:
-                    price= 20.0;
+                    price = 20.0;
                     break;
                 case Level.low:
-                    price= 12.5;
+                    price = 12.5;
                     break;
 
             }
