@@ -1,28 +1,20 @@
 ﻿
 namespace uge_15_opgaver
 {
-    public class Amulet
+    public class Amulet: Merchandise
     {
-        public string ItemId { get; set; }
+        
         public string Design { get; set; }
         public Level Quality { get; set; }
        
 
-        public Amulet()
+     public Amulet(string itemId)
         {
-            ItemId = string.Empty;
-            Design = string.Empty;
-            
-        }
-
-        public Amulet(string itemId)
-        {
-            ItemId = itemId;
-            
+           ItemId = itemId;  
         }
         public Amulet(string itemId, Level quality)
         {
-            ItemId = itemId;
+            ItemId= itemId;
             Quality = quality;
 
         }
@@ -39,7 +31,6 @@ namespace uge_15_opgaver
             Design = design;
             Quality = quality;
             controller.AddToList(this);
-
         }
 
 

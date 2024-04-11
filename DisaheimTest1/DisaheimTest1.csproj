@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\uge_15_opgaver\uge_15_opgaver.csproj" />
+    <ProjectReference Include="..\UtilityLib\UtilityLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

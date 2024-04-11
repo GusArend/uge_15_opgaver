@@ -1,6 +1,6 @@
-﻿
+﻿using uge_15_opgaver;
 
-namespace uge_15_opgaver
+namespace UtilityLib
 {
     public class Utility
     {
@@ -26,6 +26,23 @@ namespace uge_15_opgaver
             }
                 return price;
             
+        }
+
+        public double GetValueOfCourse(Course course)
+        {
+            int timeInHours = course.DurationInMinutes / 60;
+            double remainder = course.DurationInMinutes % 60;
+
+            if (remainder > 0)
+            {
+                return 875 * (timeInHours + 1);
+            } else
+            {
+                return 875 * timeInHours;
+            }
+
+            // double timeInHours = course.DurationInMinutes / 60;
+            // return 875 * Math.Ceiling(timeInHours)
         }
     }
 }

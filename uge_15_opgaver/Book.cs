@@ -1,31 +1,23 @@
 ﻿
 namespace uge_15_opgaver
 {
-    public class Book
+    public class Book: Merchandise
     {
-        public string ItemId { get; set; }
+       
         public string Title {  get; set; }
         public double Price { get; set; }
-      
-        
 
-        public Book()
-        {
-            ItemId = string.Empty;
-            Title = string.Empty;
-            Price = 0;
-            
-        }
+       
         public Book(string itemId)
         {
-            ItemId = itemId;
+           ItemId = itemId;
             Title = string.Empty;
             Price = 0;
 
         }
         public Book(string itemId, string title)
         {
-            ItemId = itemId;
+          ItemId= itemId;
             Title = title;
         }
         public Book(string itemId, string title, double price)
