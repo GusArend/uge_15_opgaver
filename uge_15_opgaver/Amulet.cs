@@ -33,6 +33,15 @@ namespace uge_15_opgaver
             Quality = quality;
 
         }
+        public Amulet(string itemId, Level quality, string design, Controller controller)
+        {
+            ItemId = itemId;
+            Design = design;
+            Quality = quality;
+            controller.AddToList(this);
+
+        }
+
 
         public override string ToString()
         {

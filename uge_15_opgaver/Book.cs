@@ -6,6 +6,7 @@ namespace uge_15_opgaver
         public string ItemId { get; set; }
         public string Title {  get; set; }
         public double Price { get; set; }
+      
         
 
         public Book()
@@ -32,6 +33,14 @@ namespace uge_15_opgaver
             ItemId = itemId;
             Title = title;
             Price = price;
+        }
+
+        public Book(string itemId, string title, double price, Controller controller)
+        {
+            ItemId = itemId;
+            Title = title;
+            Price = price;
+            controller.AddToList(this);
         }
 
         public override string ToString()
