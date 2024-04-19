@@ -4,10 +4,10 @@ namespace uge_15_opgaver
 {
     public interface IPersistable
     {
-        void Save();
-        void Save(string filename);
+        
+        void Save(string? filename = "ValuableRepository.txt");
 
-        void Load();
-        void Load(string filename);
+        
+        void Load(string? filename = "ValuableRepository.txt");
     }
 }
