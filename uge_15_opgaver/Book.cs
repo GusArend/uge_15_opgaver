@@ -27,14 +27,6 @@ namespace uge_15_opgaver
             Price = price;
         }
 
-        public Book(string itemId, string title, double price, Controller controller)
-        {
-            ItemId = itemId;
-            Title = title;
-            Price = price;
-            controller.AddToList(this);
-        }
-
         public override double GetValue() { return Price; }
 
         public override string ToString()

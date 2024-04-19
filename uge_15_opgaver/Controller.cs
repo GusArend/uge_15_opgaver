@@ -15,10 +15,5 @@ namespace uge_15_opgaver
         { 
           ValuableRepo.AddValuable(valuable);
         }
-        
-
-       
-
-
     }
 }
