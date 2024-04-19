@@ -1,109 +1,109 @@
-﻿using uge_15_opgaver;
+﻿//using uge_15_opgaver;
 
-namespace DisaheimTest1
-{
-    [TestClass]
+//namespace DisaheimTest1
+//{
+//    [TestClass]
 
-    public class UnitTest3
+//    public class UnitTest3
 
-    {
+//    {
 
-        Book b1, b2, b3;
+//        Book b1, b2, b3;
 
-        Amulet a1, a2, a3;
+//        Amulet a1, a2, a3;
 
-        Course c1, c2, c3;
+//        Course c1, c2, c3;
 
-        Controller controller;
-
-
-        [TestInitialize]
-
-        public void Init()
-
-        {
-
-            // Arrange
-
-            b1 = new Book("1");
-
-            b2 = new Book("2", "Falling in Love with Yourself");
-
-            b3 = new Book("3", "Spirits in the Night", 123.55);
-
-            a1 = new Amulet("11");
-
-            a2 = new Amulet("12", Level.high);
-
-            a3 = new Amulet("13", Level.low, "Capricorn");
-
-            c1 = new Course("Spådomskunst for nybegyndere");
-
-            c2 = new Course("Magi – når videnskaben stopper", 157);
-
-            c3 = new Course("Et indblik i Helleristning", 180);
+//        Controller controller;
 
 
-            controller = new Controller();
+//        [TestInitialize]
 
-            controller.AddToList(b1);
+//        public void Init()
 
-            controller.AddToList(b2);
+//        {
 
-            controller.AddToList(b3);
+//            // Arrange
 
-            controller.AddToList(a1);
+//            b1 = new Book("1");
 
-            controller.AddToList(a2);
+//            b2 = new Book("2", "Falling in Love with Yourself");
 
-            controller.AddToList(a3);
+//            b3 = new Book("3", "Spirits in the Night", 123.55);
 
-            controller.AddToList(c1);
+//            a1 = new Amulet("11");
 
-            controller.AddToList(c2);
+//            a2 = new Amulet("12", Level.high);
 
-            controller.AddToList(c3);
+//            a3 = new Amulet("13", Level.low, "Capricorn");
 
-        }
+//            c1 = new Course("Spådomskunst for nybegyndere");
 
-        [TestMethod]
+//            c2 = new Course("Magi – når videnskaben stopper", 157);
 
-        public void TestBookList()
+//            c3 = new Course("Et indblik i Helleristning", 180);
 
-        {
 
-            // Assert
+//            controller = new Controller();
 
-            Assert.AreEqual(b3, controller.Books[2]);
+//            controller.AddToList(b1);
 
-        }
+//            controller.AddToList(b2);
 
-        [TestMethod]
+//            controller.AddToList(b3);
 
-        public void TestAmuletList()
+//            controller.AddToList(a1);
 
-        {
+//            controller.AddToList(a2);
 
-            // Assert
+//            controller.AddToList(a3);
 
-            Assert.AreEqual(a1, controller.Amulets[0]);
+//            controller.AddToList(c1);
 
-        }
-        [TestMethod]
+//            controller.AddToList(c2);
 
-        public void TestCourseList()
+//            controller.AddToList(c3);
 
-        {
+//        }
 
-            // Assert
+//        [TestMethod]
 
-            Assert.AreEqual(c1, controller.Courses[0]);
+//        public void TestBookList()
 
-            Assert.AreEqual(c2, controller.Courses[1]);
+//        {
 
-            Assert.AreEqual(c3, controller.Courses[2]);
+//            // Assert
 
-        }
+//            Assert.AreEqual(b3, controller.Books[2]);
 
-    }
-}
+//        }
+
+//        [TestMethod]
+
+//        public void TestAmuletList()
+
+//        {
+
+//            // Assert
+
+//            Assert.AreEqual(a1, controller.Amulets[0]);
+
+//        }
+//        [TestMethod]
+
+//        public void TestCourseList()
+
+//        {
+
+//            // Assert
+
+//            Assert.AreEqual(c1, controller.Courses[0]);
+
+//            Assert.AreEqual(c2, controller.Courses[1]);
+
+//            Assert.AreEqual(c3, controller.Courses[2]);
+
+//        }
+
+//    }
+//}

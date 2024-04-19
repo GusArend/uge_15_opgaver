@@ -35,6 +35,8 @@ namespace uge_15_opgaver
             controller.AddToList(this);
         }
 
+        public override double GetValue() { return Price; }
+
         public override string ToString()
         {
             return $"ItemId: {ItemId}, Title: {Title}, Price: {Price}";

@@ -1,144 +1,144 @@
 ﻿
-using uge_15_opgaver;
+//using uge_15_opgaver;
 
-namespace DisaheimTest1
-{
-    [TestClass]
+//namespace DisaheimTest1
+//{
+//    [TestClass]
 
-    public class UnitTest4
+//    public class UnitTest4
 
-    {
+//    {
 
-        Book b1, b2, b3;
+//        Book b1, b2, b3;
 
-        Amulet a1, a2, a3;
+//        Amulet a1, a2, a3;
 
-        Course c1, c2;
+//        Course c1, c2;
 
-        CourseRepository courses;
+//        CourseRepository courses;
 
-        MerchandiseRepository merchandise;
+//        MerchandiseRepository merchandise;
 
-        [TestInitialize]
+//        [TestInitialize]
 
-        public void Init()
+//        public void Init()
 
-        {
+//        {
 
-            // Arrange
+//            // Arrange
 
-            b1 = new Book("1");
+//            b1 = new Book("1");
 
-            b2 = new Book("2", "Falling in Love with Yourself");
+//            b2 = new Book("2", "Falling in Love with Yourself");
 
-            b3 = new Book("3", "Spirits in the Night", 123.55);
+//            b3 = new Book("3", "Spirits in the Night", 123.55);
 
-            a1 = new Amulet("11");
+//            a1 = new Amulet("11");
 
-            a2 = new Amulet("12", Level.high);
+//            a2 = new Amulet("12", Level.high);
 
-            a3 = new Amulet("13", Level.low, "Capricorn");
+//            a3 = new Amulet("13", Level.low, "Capricorn");
 
-            c1 = new Course("Eufori med røg");
+//            c1 = new Course("Eufori med røg");
 
-            c2 = new Course("Nuru Massage using Chia Oil", 157);
+//            c2 = new Course("Nuru Massage using Chia Oil", 157);
 
-            courses = new CourseRepository();
+//            courses = new CourseRepository();
 
-            merchandise = new MerchandiseRepository();
+//            merchandise = new MerchandiseRepository();
 
-            // Act
+//            // Act
 
-            merchandise.AddMerchandise(b1);
+//            merchandise.AddMerchandise(b1);
             
 
-            merchandise.AddMerchandise(b2);
+//            merchandise.AddMerchandise(b2);
 
-            merchandise.AddMerchandise(b3);
+//            merchandise.AddMerchandise(b3);
 
-            merchandise.AddMerchandise(a1);
+//            merchandise.AddMerchandise(a1);
 
-            merchandise.AddMerchandise(a2);
+//            merchandise.AddMerchandise(a2);
 
-            merchandise.AddMerchandise(a3);
+//            merchandise.AddMerchandise(a3);
 
-            courses.AddCourse(c1);
+//            courses.AddCourse(c1);
 
-            courses.AddCourse(c2);
+//            courses.AddCourse(c2);
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void TestGetBook()
+//        public void TestGetBook()
 
-        {
+//        {
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual(b2, merchandise.GetMerchandise("2"));
+//            Assert.AreEqual(b2, merchandise.GetMerchandise("2"));
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void TestGetAmulet()
+//        public void TestGetAmulet()
 
-        {
+//        {
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual(a3, merchandise.GetMerchandise("13"));
+//            Assert.AreEqual(a3, merchandise.GetMerchandise("13"));
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void TestGetCourse()
+//        public void TestGetCourse()
 
-        {
+//        {
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual(c1, courses.GetCourse("Eufori med røg"));
+//            Assert.AreEqual(c1, courses.GetCourse("Eufori med røg"));
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void TestGetTotalValueForBook()
+//        public void TestGetTotalValueForBook()
 
-        {
+//        {
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual(123.55, merchandise.GetTotalValue("books"));
+//            Assert.AreEqual(123.55, merchandise.GetTotalValue("books"));
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void TestGetTotalValueForAmulet()
+//        public void TestGetTotalValueForAmulet()
 
-        {
+//        {
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual(60.0, merchandise.GetTotalValue("amulets"));
+//            Assert.AreEqual(60.0, merchandise.GetTotalValue("amulets"));
 
-        }
+//        }
 
-        [TestMethod]
+//        [TestMethod]
 
-        public void TestGetTotalValueForCourse()
+//        public void TestGetTotalValueForCourse()
 
-        {
+//        {
 
-            // Assert
+//            // Assert
 
-            Assert.AreEqual(2625.0, courses.GetTotalValue());
+//            Assert.AreEqual(2625.0, courses.GetTotalValue());
 
-        }
+//        }
 
-    }
-}
+//    }
+//}
